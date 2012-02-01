@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font: 0.8em "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
+	color: #343434;
+	 background-image: url(images/bg.jpeg);
+	margin: 0;
+	padding: 0;
+}
+#mainwrapper{
+	width: 710px;
+	margin: 0 auto;
+}
+#wrapper {
+	width: 710px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 10px 25px 25px 25px;
+	border: 1px solid #2e2e2e;
+	position:relative;
+	min-height: 450px;
+}
+#logo {
+	margin: 0px 67px;
+	width: 574px;
+	height: 86px;
+	background: url(images/epLogo.png) no-repeat;
+}
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	text-indent:-99999px;
+}
+#nav {
+	list-style: none;
+	padding: 0;
+	margin: 10px 0 20px 0;
+	background: #2e2e2e url(images/nav_bar.jpg) repeat-x;
+	display: block;
+	overflow: hidden;
+	font-size: 0.9em;
+	height:33px;
+	text-transform:capitalize;
+}
+#nav li {
+	display: inline;
+}
+#nav li a {
+	display: block;
+	float: left;
+	padding: 10px 15px;
+	color: white;
+	text-decoration: none;
+	outline: none;
+}
+#nav li a:hover {
+	background: #1b1b1b url(images/nav_bar_o.jpg) repeat-x;
+}
+#load {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: url(images/ajax-loader.gif);
+	width: 43px;
+	height: 11px;
+	text-indent: -9999em;
+}
+
+#content {
+}
+h2 {
+	margin: 0;
+	padding: 0.5em 0;
+	color:#2e2e2e;
+	font-family:Helvetica, Arial, Sans-serif;
+	font-size: 16px;
+}
+p {
+	margin: 0;
+	padding: 0.4em 0;
+	color:#686868;
+	line-height:1.4em;
+}
+#content img.right {
+	float: right;
+	margin: 0 0 8px 8px;
+
+}
+#footer {
+	width: 762px;
+	height: 25px;
+	color: fff;
+	background: #333;
+}
+#footer a:link {
+	color: #fff;
+}
+#image-wrapper{
+	margin: 0;
+	padding: 10px;
+}
+a:active {
+	outline: none;
+}
+a:link  img{
+	outline: none;
+}
+a:visited {
+	outline: none;
+	color: #fff;
+}
+img:hover {
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+img:active {
+	outline: none;
+}
+img {
+	padding: 2px 16px;
+	outline: none;
+	border: none;
+}

@@ -1,0 +1,44 @@
+
+    
+		<div id="inline1" style="width:400px;height:100px;overflow:hidden;">
+		
+ <script type="text/javascript">
+    
+		
+		$('#submit').click(function() {
+			alert("invalid user");
+
+		});
+	$('#cancel').click(function() {
+		$("#fancybox-close").click();
+		});
+  
+  </script>
+
+  <style type="text/css">
+    * { font-family: Verdana; font-size: 11px; line-height: 14px; }
+    .submit { margin-left: 125px; margin-top: 10px;}
+    .label { display: block; float: left; width: 120px; text-align: right; margin-right: 5px; }
+    .form-row { padding: 5px 0; clear: both; width: 700px; }
+    label.error { width: 250px; display: block; float: left; color: red; padding-left: 10px; }
+    input[type=text], textarea { width: 250px; float: left; }
+    textarea { height: 50px; }
+  </style>
+
+
+
+    <form id="form1" method="post" action="">
+      <div class="form-row"><span class="label">Username</span><input type="text" id="username" name="username" />
+	 
+	 
+	  </div>
+      <div class="form-row"><span class="label">Password</span><input id="password" type="password" name="shorttext" />
+      
+      </div>
+
+      <div class="form-row"><input class="submit" type="button" id="submit" value="Submit">&nbsp;<input type="button" id="cancel" value="Cancel"></div>
+    </form>
+
+
+		</div>
+		

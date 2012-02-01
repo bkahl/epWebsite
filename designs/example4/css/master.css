@@ -1,0 +1,229 @@
+/* ================================================================ 
+*	Project:	Enterprise Parnters CSS Style	
+*	Name: 		Brad Kahl / Erin Corson		
+*	Date:		12-03-2010
+*   Version:    1.0
+=================================================================== */
+a:link{
+	outline:				none;
+	border:					none;
+}
+a:visited{
+	outline:				none;
+	border:					none;
+}
+a:active{
+	outline:				none;
+	border:					none;
+}
+img{
+	border:					none;
+	outline:				none;
+}
+html, body{
+	margin:					0;
+	padding: 				0;
+	font: 					0.8em "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
+	color: 					#343434;
+	background:				#bfbfbf url(../img/background-strip-1100.png) repeat-x;
+}
+.hidden{
+	display: none;
+}
+/***********************************************************************************
+//Main Divs
+container, logo, main-navigation, header, slider-a, content, sidebar-a, footer
+***********************************************************************************/
+#container{
+	margin: 				0 auto;
+	padding:				0;
+	width:					990px;
+	/*outline:				1px solid #000;*/	
+    background:				#fff;
+}
+#logo{
+	height:					95px;
+	background:				#fff url(../img/main-header4.png) no-repeat;
+}
+#main-navigation{
+    margin:                 0;
+	height:					30px;
+	background:				#bfbfbf url(../img/nav_black.png);
+}
+#nav_wrap{
+    margin:                 0 10px;
+    height:                 100%;
+    background:             url(../img/nav_black_strip.png) repeat-x;   
+}
+#navigation{
+	margin: 				0;
+	padding: 				0;
+	list-style:				none;
+	text-decoration:		none;
+	color:					#fff;
+}
+#navigation li{
+	float:					left;
+}
+#navigation li a{
+	padding:				8px 15px;
+	display:				block;
+	text-decoration:		none;
+	font-weight: 			bold;
+	color:					#fff;
+}
+#navigation li a:hover{
+	background: 			url(../img/navigation-strip-black-hover.png) repeat-x;
+}
+#header{
+	margin-right: 			300px;
+	width:					690px;
+	height: 				273px;
+}
+#header-img{
+	margin-right:			23px;
+	width:					690px;
+	height:					100%;
+	background:				url(../img/img1.3.png) no-repeat;
+}
+#header-arrow{
+	float:					right;
+	width:					23px;
+	height:					100%;
+	background:				url(../img/transparent-header-arrow2.png) no-repeat;
+
+}
+#slider-a{
+	float:					right;
+	width:					300px;
+	height: 				273px;
+	background:				url(../img/slider-a-strip-blue.png) repeat-x;
+}
+#slider-a p{
+	margin: 				0;
+	padding: 				15px;
+	font: 					1.2em Arial, Helvetica, sans-serif;
+	color:					#fff;
+}
+#content{
+	margin-right: 			300px;
+	width:					690px;
+	background: 			#fff;
+}
+/***********************************************************************************
+// Div's within side of ID **content**
+_content-box, _left-column, _right-column
+***********************************************************************************/
+#_content-box{
+	background: 			#fff;
+	margin:					20px 20px 0px 20px;
+    padding:                0;
+    overflow:               hidden;
+}
+#column_wrap{
+	margin-right:     		345px;
+    width:                  690px;
+}
+#_left-column{
+    width:                  315px;
+	padding: 				15px 5px 15px 20px;
+    position:               relative;
+	background:				#fff;
+}
+#_right-column{
+	padding: 				15px 15px 15px 10px;
+    float:                  right;
+    width:                  315px;
+	background: 			#fff;
+}
+#_left-column h1, #_right-column h1{
+	font: 					1.8em Arial, Helvetica, sans-serif;
+	color:					#870d0d;
+	text-align: 			top left;
+}
+h6.title-underline{
+	background:				url(../img/title-underline.png) no-repeat top left;
+}
+/**********************************************************************************/
+#sidebar-a{
+	clear: 					both;
+	float:					right;
+	width:					300px;
+	background:				#f3f3f3 url(../img/sidebar-a-background.png) no-repeat;
+}
+#sidebar-a p{
+	margin: 				0;
+	padding: 				15px;
+}
+
+#sidebar-a .section{
+    background:             #f9faf9;
+    border:                 2px solid #c8c5c5;
+    margin:                 15px;
+    padding:                5px;
+}
+#sidebar-a-search{
+	margin:                 15px;
+}
+#sidebar-a-email{
+	margin:					5px 5px 5px 7px;
+	height:					26px;
+	background:				url(../img/email.png) no-repeat;
+}
+#sidebar-a-rss{
+	margin:					10px 5px 5px 7px;
+	height:					26px;
+	background:				url(../img/rss.png) no-repeat;
+}
+#sidebar-a-email:hover, #sidebar-a-rss:hover{
+    filter:					alpha(opacity=50);
+    -moz-opacity:			0.5;
+    -khtml-opacity: 		0.5;
+    opacity: 				0.5;
+	cursor:					pointer;
+}
+form, fieldset{
+	border:					medium none;
+	margin:					0;
+	padding:				0;
+}
+div.form{
+	margin:					0;
+	padding:				0;
+	width:					285px;
+}
+#searchfield{
+	background:				url(../img//searchbox.png) repeat-x;
+	height:					22px;
+    border:                 2px solid #c8c5c5;
+    overflow:               hidden;
+}
+input.field{
+	margin:					0;
+	padding:				1px 5px;
+	width:					205px;
+	height:					26px;
+	border:					medium none;
+	color:					#7c7f83;
+}
+#form-login input{
+    border:					thin solid #c8c5c5;
+    background:             #dddddd;
+}
+input.submit{
+	width:					34px;
+	height:					26px;
+	margin:					0 0 0 3px;
+	background:				url(../img/searchicon-background.png) no-repeat;
+	cursor:					pointer;
+    border:                 2px solid #646464;
+}
+.form-row{
+	margin: 				0;
+	padding:				0px 10px 7px;
+}
+#footer{
+	clear: 					both;
+	height:					65px;
+	background:				url(../img/footer-strip-black.png) repeat-x;
+}

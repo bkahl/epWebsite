@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font: 0.8em "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
+	color: #343434;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	border-top: 5px solid #2a2a2a;
+}
+#demo-header{
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+#login-link{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    background: #2a2a2a;
+    padding: 0px 15px 5px 15px;
+    color: #FFF;
+	font: normal 10pt Tahoma;
+	text-decoration: none;
+	outline: none;
+}
+#login-panel{
+    position: absolute;
+    top: 21px;
+    right: 0px;
+    width: 190px;
+    padding: 10px 15px 5px 15px;
+    background: #2a2a2a;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #FFF;
+    display: none;
+	z-index: 10;
+}
+label{
+    line-height: 1.8;
+}
+#wrapper {
+	width: 710px;
+	margin: 30px auto;
+	background-color: #fff;
+	padding: 55px 25px 25px 25px;
+	position:relative;
+}
+#logo {
+	margin: 0px 67px;
+	width: 574px;
+	height: 86px;
+	background: url(images/epLogo.png) no-repeat;
+	position: abosolute;
+	z-index:-10;
+}
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	padding: 0.3em 0;
+	text-indent:-99999px;
+}
+#nav {
+	list-style: none;
+	padding: 0;
+	margin: 10px 0 20px 0;
+	background: #2e2e2e url(images/nav_bar.jpg) repeat-x;
+	display: block;
+	overflow: hidden;
+	font-size: 0.9em;
+	height:33px;
+	text-transform:capitalize;
+}
+#nav li {
+	display: inline;
+}
+#nav li a {
+	display: block;
+	float: left;
+	padding: 10px 20px;
+	color: white;
+	text-decoration: none;
+}
+#nav li a:hover {
+	background: #1b1b1b url(images/nav_bar_o.jpg) repeat-x;
+}
+#load {
+	display: none;
+	position: absolute;
+	right: 30px;
+	top: 250px;
+	background: url(images/ajax-loader.gif);
+	width: 43px;
+	height: 11px;
+	text-indent: -9999em;
+}
+
+#content {
+}
+h2 {
+	margin: 0;
+	padding: 0.5em 0;
+	color:#2e2e2e;
+	font-family:Helvetica, Arial, Sans-serif;
+}
+p {
+	margin: 0;
+	padding: 0.4em 0;
+	color:#686868;
+	line-height:1.4em;
+}
+#content img.right {
+	float: right;
+	margin: 0 0 8px 8px;
+
+}
+#foot {
+	padding: 15px;
+	color: 000;
+	text-align: center;
+	margin: 30px 0 0 0;
+	border-top:1px solid #222222;
+}
+#image-wrapper{
+	margin: 0;
+	padding: 10px;
+}
+a:active {
+	outline: none;
+}
+a:link  img{
+	outline: none;
+}
+a:visited {
+	outline: none;
+}
+img:hover {
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+img:active {
+	outline: none;
+}
+img {
+	padding: 2px 16px;
+	outline: none;
+	border: none;
+}

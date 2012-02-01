@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Enterprise Partners Overview</title>
+<script type="text/javascript" src="js/jquery-1.4.3.js"></script>
+<script type="text/javascript" src="js/example1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#login-link").click(function(){
+        $("#login-panel").slideToggle(200);
+    })
+})
+$(document).keydown(function(e) {
+    if (e.keyCode == 27) {
+        $("#login-panel").hide(0);
+    }
+});
+
+</script>
+<style type="text/css">
+@import url(css.css);
+</style>
+</head>
+<body>
+	<div id="demo-header">
+		<a id="login-link" href="#login" title="Login">Employee Login</a>
+		<div id="login-panel">
+			<form action="" method="post">
+				<p>
+					<label>Username:
+						<input name="username" type="text" value="" />
+					</label> <br />
+					<label>Password:
+						<input name="password" type="password" value="" />
+					</label><br /><br />
+					<input type="submit" name="submit" value="Sign In" />
+					<small>Press ESC to close</small>
+				</p>
+			</form>
+		</div><!-- /login-panel -->
+	</div><!-- /demoheader -->
+
+    <div id="wrapper">
+	
+		<div id="logo"></div>
+		<h1>Enterprise Partners Overview</h1>
+
+		<ul id="nav">
+			<li><a href="index.html">Experience</a></li>
+			<li><a href="partnership.html">Partnership</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="expertise.html">Expertise</a></li>
+			<li><a href="clients.html">Clients</a></li>
+			<li><a href="results.html">Expect Results</a></li>
+		</ul>
+		
+		<div id="content">    	
+			<h2>Experience</h2>
+			<p>Enterprise Partners brings proven IT leadership and experience to bear when staffing your project.  Founded by successful independent consultants, Enterprise Partners has gained the respect of job seekers and companies alike by putting great people in the right positions.  Many of our consultants come from professional referrals, and all of our consultants are screened internally (so you don't have to).</p>
+		</div>
+		
+		<div id="foot">
+			11921 Freedom Drive, Suite 550<br/>
+			Reston, VA 20190<br/>
+			(703) 834- 6937 (MYEP)
+		</div>
+		
+	</div>
+	
+</body>
+</html>

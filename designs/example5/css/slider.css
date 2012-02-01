@@ -1,0 +1,48 @@
+/*--Window/Masking Styles--*/
+.window {
+	height:273px;	width: 660px;
+	overflow: hidden; /*--Hides anything outside of the set width/height--*/
+	position: absolute;
+}
+	
+.image_reel {
+	position: absolute;
+	z-index:0;
+	top: 0; left: 0;
+	height:273px;
+}
+.image_reel img {float: left;}
+.image_reel img:hover {
+   filter:alpha(opacity=75);
+   -moz-opacity:0.75;
+   -khtml-opacity: 0.75;
+   opacity: 0.75;
+
+}
+/*--Paging Styles--*/
+/*
+.paging {
+	position: absolute;
+	bottom: 40px; right: -7px;
+	width: 178px; height:47px;
+	z-index: 100; 
+	text-align: center;
+	line-height: 40px;
+	background: url(../img/paging_bg2.png) no-repeat;
+	display: none; 
+}
+*/
+.paging a {
+	padding: 5px;
+	text-decoration: none;
+	color: #fff;
+}
+.paging a.active {
+	font-weight: bold;
+	background: #920000;
+	border: 1px solid #610000;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.paging a:hover {font-weight: bold;}

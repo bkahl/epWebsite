@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Example 4</title>
+<link rel="stylesheet" type="text/css" href="media/css/style.css" />
+<link rel="stylesheet" type="text/css" href="media/css/tagcloud.css">
+<script type="text/javascript" src="media/js/jquery-1.4.3.js"></script>
+<script type="text/javascript" src="media/js/lightbox.js"></script>
+<script type="text/javascript" src="media/js/jquery.fancybox-1.3.1.js"></script>
+<link rel="stylesheet" type="text/css" href="media/css/fancy.css" media="screen" />
+
+<script type="text/Javascript">
+	$().ready(function() {
+	
+		$('#header').load('ajax/header.html');
+		$('#mainarea').load('ajax/experience.html');
+		
+		$(window).load(function () {
+			$("a.home").addClass('active');
+			var clickStore = $("a.home");
+			$('#header ul a').click(function() {
+
+				$(clickStore).removeClass('active');
+				
+				var sect = $(this).attr('title') + ".html";
+				$('#mainarea').load('ajax/' + sect);
+				$(this).addClass('active');
+				clickStore = this;
+			});
+		});
+		
+		$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+                'autoScale'			: false,
+				'transitionOut'		: 'none'
+			});
+		
+		$("#various2").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+                'autoScale'			: false,
+				'transitionOut'		: 'none'
+			});
+          
+	});
+	
+	function tagCloud() {
+	
+			var data = ({ tags:[
+							{tag:'Results',freq:'3'},
+							{tag:'Personnel',freq:'2'},
+							{tag:'Resources',freq:'2'},
+							{tag:'Hiring',freq:'1'},
+							{tag:'SAP',freq:'30'},
+							{tag:'Experience',freq:'2'},
+							{tag:'Consultants',freq:'60'},
+							{tag:'Jobs',freq:'20'},
+							{tag:'Technical',freq:'20'},
+							{tag:'Enterprise',freq:'50'},
+							{tag:'Partners',freq:'118'},
+							{tag:'Skills',freq:'2'},
+							{tag:'Clients',freq:'3'},
+							{tag:'Staff',freq:'1'},
+							{tag:'People',freq:'2'},
+							{tag:'Project',freq:'1'},
+							{tag:'Specialist',freq:'2'},
+							{tag:'Expertise',freq:'25'}
+						]})
+						
+			$("<ul>").attr("id", "tagList").appendTo("#tagCloud");
+			
+			$.each(data.tags, function(i, val) {
+						
+				var li = $("<li>");
+				$("<a>").text(val.tag).appendTo(li);
+						
+				//set tag size
+				var fsize = "";
+				if (val.freq / 10 < 1) {
+					fsize = val.freq / 10 + 1 + "em";
+				} else if (val.freq / 10 > 2) {
+					fsize = "2em";
+				} else {
+					fsize = val.freq / 10 + "em";
+				}
+				
+				li.children().css("fontSize", fsize);
+						
+				//add to list
+				li.appendTo("#tagList");
+						
+			});
+		}
+</script>
+
+
+
+</head>
+
+<body>
+	<div id="wrapper">
+        
+      
+		
+		 <div id="title">
+			<iframe src="slideshow/index.html" style=" border:none " width="759" height="110" frameborder="0" scrolling="no"></iframe>
+		</div>
+<div id="content">
+		  <div id="header">
+
+		 </div>
+		
+			<div id="mainarea">
+
+	
+			</div>
+		      
+			  
+	          		 
+		 <div id="footer">
+		       
+			   <div align="center">
+    <table class="cdaclinks" width="98%" border="0" cellpadding="2">
+      <tr>
+        <td width="25%">
+		
+		Updated: 11/13/10
+	
+		
+		</td>
+        <td><div align="center"><a id="various1" href="#inline1" title="Client Login">Client Login</a>&nbsp;|&nbsp;<a id="various2" href="#inline1" title="Candidate Login">Candidate Login</a></div></td>
+        <td><div align="right"><a href="mailto:admin@frodopwns.com">Webmaster</a></div></td>
+      </tr>
+    </table></div>		
+			    
+	     </div>
+		 </div>
+		 
+		    </div>
+    <div style="display: none;">
+		<div id="inline1" style="width:400px;height:85px;overflow:hidden;">
+		
+ <script type="text/javascript">
+    
+	
+		$('#username').blur(function() {
+			$("#fail_img").hide();
+			$("#validate_img").show();
+			function hideloader() { 
+			$("#validate_img").hide(); 
+			$("#fail_img").show();
+			}
+			setTimeout(hideloader,2000);
+		});
+		
+		$('#form1').submit(function() {
+			alert("invalid user");
+		});
+  
+  </script>
+
+  <style type="text/css">
+    * { font-family: Verdana; font-size: 11px; line-height: 14px; }
+    .submit { margin-left: 125px; margin-top: 10px;}
+    .label { display: block; float: left; width: 120px; text-align: right; margin-right: 5px; }
+    .form-row { padding: 5px 0; clear: both; width: 700px; }
+    label.error { width: 250px; display: block; float: left; color: red; padding-left: 10px; }
+    input[type=text], textarea { width: 250px; float: left; }
+    textarea { height: 50px; }
+  </style>
+
+
+
+    <form id="form1" method="post" action="">
+      <div class="form-row"><span class="label">Username</span><input type="text" id="username" name="username" />
+	  <span style="display:none;" id="validate_img">&nbsp;
+	  <img src="media/images/loader.gif" /></span>
+	  <span style="display:none;" id="fail_img">&nbsp;
+	  <img src="media/images/fail_img.png" /></span>
+	  </div>
+      <div class="form-row"><span class="label">Password</span><input type="text" name="password" /></div>
+
+      <div class="form-row"><input class="submit" type="submit" value="Submit"></div>
+    </form>
+
+
+		</div>
+		
+	</div>
+	
+
+</body>
+</html>
